@@ -1,0 +1,222 @@
+
+:root {
+    --bs-primary: #16a085;
+    --bs-secondary: #2c3e50;
+    --bs-dark: #1a1a1a;
+    --light-green: #c8e6c9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.9) !important;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white !important;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 1rem;
+}
+
+.nav-link.active {
+    color: var(--bs-primary) !important;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: url('../images/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-hero {
+    min-height: 100vh;
+    background: url('../images/stars.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-hero {
+    min-height: 100vh;
+    background: url('../images/canyon.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.recent-works,
+.photography-section,
+.videography-section,
+.about-content,
+.contact-form-section,
+.contact-info-section {
+    min-height: 50vh;
+}
+
+.bg-light-green {
+    background-color: var(--light-green) !important;
+}
+
+.works-content,
+.photo-content,
+.video-content {
+    padding: 3rem !important;
+}
+
+.works-image img {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.photo-image img {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.video-image img {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+}
+
+.btn-dark {
+    background-color: var(--bs-dark);
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--light-green);
+    color: var(--bs-dark);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-control {
+    border: 2px solid #ffffff;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.form-control:focus {
+    border-color: var(--bs-primary);
+    background-color: white;
+}
+
+.service-item {
+    padding: 10px 0;
+}
+
+.service-check {
+    color: var(--bs-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.footer {
+    background-color: var(--bs-dark) !important;
+}
+
+.social-links span {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .hero-section,
+    .about-hero,
+    .contact-hero {
+        min-height: 70vh;
+    }
+    
+    .works-content,
+    .photo-content,
+    .video-content {
+        padding: 2rem !important;
+    }
+    
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.8rem;
+    }
+    
+    .works-image img,
+    .photo-image img,
+    .video-image img {
+        height: 250px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+    
+    .display-3 {
+        font-size: 2rem;
+    }
+}
